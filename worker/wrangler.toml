@@ -11,6 +11,6 @@ kv_namespaces = [
 [vars]
 ALLOWED_ORIGINS = [
   'https://owinobrian.github.io',
-  'https://owinobp.github.io',  // add this
+  'https://owinobp.github.io',
 ]
 COOKIE_SAMESITE = "None"
