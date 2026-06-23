@@ -9,5 +9,8 @@ kv_namespaces = [
 
 # For GitHub Pages + workers.dev production deployment, uncomment and set:
 [vars]
-ALLOWED_ORIGINS = "https://owinobrian.github.io"
-# COOKIE_SAMESITE = "None"
+const ALLOWED_ORIGINS = [
+  'https://owinobrian.github.io',
+  'https://owinobp.github.io',
+]
+COOKIE_SAMESITE = "None"
