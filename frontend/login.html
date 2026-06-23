@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Ujao School Bus Ops</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="app-body">
+    <main class="page-shell page-shell-login">
+      <section class="hero-card hero-card-login">
+        <p class="kicker">School Bus Operations</p>
+        <h1>Keep the morning rush visible.</h1>
+        <p class="hero-copy">
+          Admins manage fleet and student records. Drivers get a focused mobile
+          screen for fast pickup, dropoff, and incident logging.
+        </p>
+        <div class="hero-metrics">
+          <div class="metric-pill">
+            <span>Driver-first</span>
+            <strong>Tap-friendly actions</strong>
+          </div>
+          <div class="metric-pill">
+            <span>Daily ops</span>
+            <strong>AM and PM tracking</strong>
+          </div>
+          <div class="metric-pill">
+            <span>Data source</span>
+            <strong>Airtable + Cloudflare</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel-card login-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Staff Sign In</p>
+            <h2>Welcome back</h2>
+          </div>
+        </div>
+
+        <div id="login-status" class="status-banner" hidden></div>
+
+        <form id="login-form" class="stack" novalidate>
+          <label class="field-group">
+            <span>Email</span>
+            <input
+              type="email"
+              name="email"
+              autocomplete="username"
+              placeholder="samuel@ujao.example"
+              required
+            />
+          </label>
+
+          <label class="field-group">
+            <span>Password</span>
+            <input
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              placeholder="Enter your password"
+              required
+            />
+          </label>
+
+          <button type="submit" class="primary-button wide-button">
+            Sign In
+          </button>
+        </form>
+
+        <p class="small-note">
+          Passwords are verified against Cloudflare KV credentials, not Airtable.
+        </p>
+      </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script type="module" src="assets/login.js"></script>
+  </body>
+</html>
+

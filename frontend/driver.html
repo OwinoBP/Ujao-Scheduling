@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driver View | Ujao School Bus Ops</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="app-body">
+    <main class="page-shell page-shell-driver">
+      <header class="site-header site-header-driver">
+        <div>
+          <p class="kicker">Driver Run Sheet</p>
+          <h1 id="driver-greeting">Today’s route</h1>
+          <p id="driver-meta" class="muted"></p>
+        </div>
+        <div class="inline-actions">
+          <button id="driver-refresh" class="secondary-button" type="button">
+            Refresh
+          </button>
+          <button id="driver-logout" class="ghost-button" type="button">
+            Log Out
+          </button>
+        </div>
+      </header>
+
+      <div class="toolbar toolbar-driver">
+        <label class="field-group field-group-compact">
+          <span>Trip date</span>
+          <input id="driver-date" type="date" />
+        </label>
+        <div class="stack-inline">
+          <span id="driver-last-sync" class="chip">Waiting for data</span>
+          <span id="driver-connection" class="chip chip-muted">Online</span>
+        </div>
+      </div>
+
+      <div id="driver-status" class="status-banner" hidden></div>
+      <section id="driver-groups" class="stack"></section>
+    </main>
+
+    <script src="config.js"></script>
+    <script type="module" src="assets/driver.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Ujao School Bus Ops</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="app-body">
+    <main class="page-shell page-shell-admin">
+      <header class="site-header">
+        <div>
+          <p class="kicker">Admin Dashboard</p>
+          <h1>Ujao School Bus Ops</h1>
+          <p id="admin-user-meta" class="muted"></p>
+        </div>
+        <div class="inline-actions">
+          <button id="admin-refresh" class="secondary-button" type="button">
+            Refresh
+          </button>
+          <button id="admin-logout" class="ghost-button" type="button">
+            Log Out
+          </button>
+        </div>
+      </header>
+
+      <div id="admin-status" class="status-banner" hidden></div>
+
+      <nav class="nav-strip" aria-label="Admin sections">
+        <button class="nav-button is-active" data-tab="schools" type="button">
+          Schools
+        </button>
+        <button class="nav-button" data-tab="buses" type="button">Buses</button>
+        <button class="nav-button" data-tab="staff" type="button">Staff</button>
+        <button class="nav-button" data-tab="students" type="button">
+          Students
+        </button>
+        <button class="nav-button" data-tab="triplogs" type="button">
+          Trip Logs
+        </button>
+        <button class="nav-button" data-tab="incidents" type="button">
+          Incidents
+        </button>
+      </nav>
+
+      <section id="admin-panel" class="panel-card panel-card-large"></section>
+    </main>
+
+    <script src="config.js"></script>
+    <script type="module" src="assets/admin.js"></script>
+  </body>
+</html>
+

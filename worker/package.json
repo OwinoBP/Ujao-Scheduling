@@ -1,0 +1,19 @@
+{
+  "name": "school-bus-ops-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "node --check src/airtable.js && node --check src/index.js",
+    "hash-password": "node scripts/hash-password.mjs",
+    "provision-staff": "node scripts/provision-staff.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3",
+    "hono": "^4"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

@@ -1,0 +1,13 @@
+name = "school-bus-ops-api"
+main = "src/index.js"
+compatibility_date = "2026-06-21"
+workers_dev = true
+
+kv_namespaces = [
+  { binding = "STAFF_CREDENTIALS", id = "8486ce094d094e01ad70119f4cf9994d", preview_id = "5b190e1dec9d4f53adbed950b5633f96" }
+]
+
+# For GitHub Pages + workers.dev production deployment, uncomment and set:
+[vars]
+ALLOWED_ORIGINS = "https://owinobrian.github.io"
+# COOKIE_SAMESITE = "None"
